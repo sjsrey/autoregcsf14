@@ -6,6 +6,7 @@ This is a Beamer presentation being build with Freemind and xsl exports.
 
 1. [Freeplane] (this example is using 1.3.11 on Mac OS X)
 2. [freemind2beamer]
+3. LaTeX installation (with [Beamer] support)
 
 
 ### Setup
@@ -23,6 +24,7 @@ This is a Beamer presentation being build with Freemind and xsl exports.
 
 Note that this might work with freemind as well, but I switched from freemind to freeplane a few years back.
 
+[Beamer]: https://bitbucket.org/rivanvx/beamer/wiki/Home
 [Freeplane]:  http://sourceforge.net/projects/freeplane/
 [freemind2beamer]: https://sites.google.com/site/freemind2beamer/
 [mm2latexbeamer_richcontent.xsl]:https://raw.githubusercontent.com/igor-go/mm_xslt_exports/master/mm2latexbeamer_richcontent.xsl 
