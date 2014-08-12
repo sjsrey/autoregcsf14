@@ -4,7 +4,7 @@ This is a Beamer presentation being build with Freemind and xsl exports.
 
 ## Dependencies
 
-1. [Freeplane] (this example is using 1.3.11 on Mac OS X)
+1. [Freeplane] Note: this example is using 1.3.11 on Mac OS X.
 2. [freemind2beamer]
 3. LaTeX installation (with [Beamer] support)
 
