@@ -10,7 +10,7 @@ This is a Beamer presentation being build with Freemind and xsl exports.
 
 ### Setup
 
-1. Clone freemind2beamer or grab file [mm2latexbeamer] from the online repos
+1. `git clone https://github.com/igor-go/mm_xslt_exports.git` or grab file [mm2latexbeamer_richcontent.xsl] from the online repos
 2. Place the  `mm2latexbeamer_richcontent.xsl` file in  `~/.freeplane/xslt/`
 3. Open up the autocsf.mm file in freeplane
 4. `File-Export` then under `filter` select `Latex Beamer (.tex)`.
@@ -19,6 +19,9 @@ This is a Beamer presentation being build with Freemind and xsl exports.
 7. Modify the autocsf.mm to add slides
 8. Repeat 4-7 until done.
 
+
+Note that this might work with freemind as well, but I've not used freemind in a couple of years.
+
 [Freeplane]:  http://sourceforge.net/projects/freeplane/
 [freemind2beamer]: https://sites.google.com/site/freemind2beamer/
-[mm2latexbeamer]:https://raw.githubusercontent.com/igor-go/mm_xslt_exports/master/mm2latexbeamer_richcontent.xsl 
+[mm2latexbeamer_richcontent.xsl]:https://raw.githubusercontent.com/igor-go/mm_xslt_exports/master/mm2latexbeamer_richcontent.xsl 
