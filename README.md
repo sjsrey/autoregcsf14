@@ -8,7 +8,6 @@ This is a Beamer presentation being build with Freemind and xsl exports.
 2. [freemind2beamer]
 3. LaTeX installation (with [Beamer] support)
 
-
 ### Setup
 
 1. `mkdir ~/.freeplane/1.3.x/xslt` 
@@ -20,7 +19,6 @@ This is a Beamer presentation being build with Freemind and xsl exports.
 7. Open up autocsf.pdf in a viewer.
 8. Modify the autocsf.mm file to add/or modify slides
 9. Repeat 5-8 until done.
-
 
 Note that this might work with freemind as well, but I switched from freemind to freeplane a few years back.
 
