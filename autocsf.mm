@@ -1,4 +1,4 @@
-<map version="freeplane 1.2.0">
+<map version="freeplane 1.3.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="Parallel PySAL" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1407811664537"><hook NAME="MapStyle">
     <properties show_icon_for_attributes="true" show_note_icons="true" show_notes_in_map="true"/>
@@ -164,8 +164,37 @@
 </node>
 </node>
 <node TEXT="ArcGIS Toolbox" ID="ID_66876990" CREATED="1407791111461" MODIFIED="1407791117346">
-<node TEXT="ArcGIS Toolbox" ID="ID_1298066915" CREATED="1407793381236" MODIFIED="1407793392301">
-<node TEXT="" ID="ID_1621353770" CREATED="1407793400019" MODIFIED="1407793400019"/>
+<node TEXT="ArcGIS Toolbox" ID="ID_1564556209" CREATED="1407962947633" MODIFIED="1407962954077">
+<node ID="ID_1864411035" CREATED="1407793400019" MODIFIED="1407963483929"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="ESRIPySALtoolbox_automodelspec.png"/>
+  </body>
+</html>
+
+</richcontent>
+<attribute NAME="height" VALUE="0.9\textheight"/>
+</node>
+</node>
+<node TEXT="ArcGIS Toolbox" ID="ID_1305092110" CREATED="1407962947633" MODIFIED="1407962954077">
+<node ID="ID_1108796013" CREATED="1407793400019" MODIFIED="1407963595836"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="ESRIPySALtoolbox_autosearch2.png"/>
+  </body>
+</html>
+
+</richcontent>
+<attribute NAME="height" VALUE="0.9\textheight"/>
+</node>
 </node>
 </node>
 </node>
