@@ -175,7 +175,6 @@
     <img src="ESRIPySALtoolbox_automodelspec.png"/>
   </body>
 </html>
-
 </richcontent>
 <attribute NAME="height" VALUE="0.9\textheight"/>
 </node>
@@ -191,7 +190,6 @@
     <img src="ESRIPySALtoolbox_autosearch2.png"/>
   </body>
 </html>
-
 </richcontent>
 <attribute NAME="height" VALUE="0.9\textheight"/>
 </node>
@@ -199,13 +197,44 @@
 </node>
 </node>
 <node TEXT="Implementation" POSITION="right" ID="ID_208524455" CREATED="1407791119599" MODIFIED="1407791124602">
-<node TEXT="Parallelization" ID="ID_273895851" CREATED="1407791125024" MODIFIED="1407791131745">
-<node TEXT="Hardware" ID="ID_537121155" CREATED="1407806831967" MODIFIED="1407806848261"/>
-<node TEXT="Parallel Strategy" ID="ID_1730368076" CREATED="1407806848793" MODIFIED="1407806865614"/>
-</node>
 <node TEXT="CSF" ID="ID_310127908" CREATED="1407791132284" MODIFIED="1407791136235">
 <node TEXT="Complex Systems Framework" ID="ID_1925462953" CREATED="1407806867273" MODIFIED="1407806883464"/>
 <node TEXT="Components for Autoreg" ID="ID_1837931657" CREATED="1407806884295" MODIFIED="1407806895911"/>
+</node>
+<node TEXT="Parallelization" ID="ID_971657199" CREATED="1407791125024" MODIFIED="1408049065207" COLOR="#00b439">
+<font NAME="SansSerif" SIZE="16"/>
+<edge STYLE="bezier" WIDTH="thin"/>
+<node ID="ID_418897739" CREATED="1407806831967" MODIFIED="1408049094847" COLOR="#990000"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="setup1.png" />
+  </body>
+</html>
+</richcontent>
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node TEXT="Parallel Strategy" ID="ID_1284108236" CREATED="1407806848793" MODIFIED="1408049065209" COLOR="#990000">
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+<node TEXT="Complex Systems Framework" ID="ID_1767460628" CREATED="1407806867273" MODIFIED="1407806883464">
+<node ID="ID_1192235421" CREATED="1407806831967" MODIFIED="1408049094847" COLOR="#990000"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="setup1.png" />
+  </body>
+</html>
+</richcontent>
+<font NAME="SansSerif" SIZE="14"/>
+</node>
+</node>
 </node>
 </node>
 </node>
