@@ -1,0 +1,60 @@
+Root Node: Ordinary Least Squares Regresion
+
+Then
+
+A. If Lagrange Multiplier Test for Spatial Error Model < p-value AND Lagrange Multiplier Test for Spatial Lag Model < p-value
+
+    1. If Robust Lagrange Multiplier Test for Spatial Error p-value < p-value and Robrust Lagrange Multiplier Test for Spatial Lag Model p-value < p-vlaue:
+        a. If NOT combo
+            i. twosls_sp.GM_Lag
+            ii. "Spatial Lag with Spatial Error - HAC"
+        b. Elif Koenker Basset Statistic p-value < p-value
+            i. error_sp_het.GM_Combo_Het
+            ii. "Spatial Lag with Spatial Error - Heteroskedastic"
+        c. Else
+            i. error_sp_hom.GM_Combo_Hom
+            ii. "Spatial Lag with Spatial Error - Homoskedastic"
+    
+    2. Else If Robust Lagrange Multiplier Test for Spatial Error p-value < p-value and RLM for Spatial Lag p-value > p-value:
+        a. If OLS Koenker Basset Statistic p-value < p-value
+            i. error_sp_het.GM_Error_Het
+            ii. "Spatial Error - Heteroskedastic"
+        b. Else If OLS Koenker Basset Statistic p-value > p-value
+            i. error_sp_hom.GM_Error_Hom
+            ii. "Spatial Error - Homoskedastic"
+
+    3. Else If RLM for Spatial Error > p-value and RLM for Spatial Lag < p-value 
+        a. If OLS Koenker Basset Statistic p-value < p-value
+            i. twosls_sp.GM_Lag (robut:white)
+            ii. "Spatial Lag - Heteroskedastic"
+        b. Else If OLS Koenker Basset Statistic p-value > p-value
+            i. twosls_sp.GM_Lag
+            ii. "Spatial Lag - Homoskedastic"
+    4. Else If RLM for Spatial Error > p-value and RLM for Spatial Lag > p-value
+        a. No PySAL Call
+        b. No Model - Robust Test not Significant - Check Model.  
+
+B. Else If Lagrange Mutiplier Test for Spatial Error Model < p-value AND Lagrange Mutiplier Test for Spatial Lag > p-value
+    1. If OLS Koenker Basset Statistic p-value < p-value
+        i. error_sp_het.GM_Error_Het
+        ii. "Spatial Error - Heteroskedastic"
+    2. Else If OLS Koenker Basset Statistic p-value > p-value
+        i. error_sp_hom.GM_Error_Hom
+        ii. "Spatial Error - Homoskedastic"
+
+C. Else If Lagrange Multiplier Test for Spatial Error Model > p-value AND Lagrange Mutliplier Test for Spatial Lag < p-value
+    1. If OLS Koenker Basset Statistic p-value < p-value
+        i. twosls_sp.GM_Lag (robust-white)
+        ii. "Spatial Lag - Heteroskedastic"
+    2. Else If OLS Koenker Basset Statistic p-value > p-value
+        i. twosls_sp.GM_Lag
+        ii. "Spatial Lag - Homoskedastic"
+
+D. Else Lagrange Multiplier Test for Spatial Error Model > p-value AND Lagrange Multiplier Test for Spatial Lag > p-value
+
+    1. If OLS Koenker Basset Statistic p-value < p-value
+        i. ols.OLS (robust-white)
+        ii. "No Space - Heteroskedastic"
+    2. Else If OLS Koenker Basset Statistic p-value > p-value
+        i. ols.OLS
+        ii. "No Space - Homoskedastic"
