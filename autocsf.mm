@@ -219,6 +219,19 @@
 </node>
 <node TEXT="Parallel Strategy" ID="ID_1284108236" CREATED="1407806848793" MODIFIED="1408049065209" COLOR="#990000">
 <font NAME="SansSerif" SIZE="14"/>
+<node TEXT="Speculative Parallelism" ID="ID_122151191" CREATED="1408195920080" MODIFIED="1408195988201">
+<node TEXT="&apos;Solve&apos; all branches of a search tree" ID="ID_801573641" CREATED="1408196058137" MODIFIED="1408196083566"/>
+<node TEXT="Leverage an excess computation model" ID="ID_1042128732" CREATED="1408196084009" MODIFIED="1408196099084"/>
+<node TEXT="No dependency in execution order" ID="ID_1348708535" CREATED="1408196195791" MODIFIED="1408196209562"/>
+<node TEXT="Synchronization at the completion of all computation" ID="ID_163842692" CREATED="1408196210230" MODIFIED="1408196228486"/>
+</node>
+<node TEXT="Implementation" ID="ID_163485682" CREATED="1408195988956" MODIFIED="1408196235091">
+<node TEXT="Utilize a processing queue" ID="ID_1311809425" CREATED="1408196235870" MODIFIED="1408196252042"/>
+<node TEXT="One manager, and n workers" ID="ID_597528590" CREATED="1408196252646" MODIFIED="1408196259618"/>
+<node TEXT="Workers draw a regression model from the queue, process, and return the result" ID="ID_1593255914" CREATED="1408196260437" MODIFIED="1408196281394"/>
+<node TEXT="Scales to where n = number of models to compute" ID="ID_86738227" CREATED="1408196281877" MODIFIED="1408196301225"/>
+<node TEXT="Potential to extend to variable parameter specification (larger tree)" ID="ID_1785966495" CREATED="1408196301812" MODIFIED="1408196330447"/>
+</node>
 </node>
 <node TEXT="Complex Systems Framework" ID="ID_1767460628" CREATED="1407806867273" MODIFIED="1407806883464">
 <node ID="ID_1192235421" CREATED="1407806831967" MODIFIED="1408049094847" COLOR="#990000"><richcontent TYPE="NODE">
