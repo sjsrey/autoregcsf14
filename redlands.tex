@@ -33,7 +33,7 @@
 
 \usetheme[]{Montpellier}
 \title{Parallel PySAL}
-\subtitle{Autoregression and Complex System Framework Integration}
+\subtitle{Autoregression and Complex Systems Framework Integration}
 \author{Jason Laura, Robert Pahle, Sergio Rey, Luc Anselin}
 \institute{GeoDa Center for Geospatial Analysis and Computation\\Arizona State University}
 \date{\today}
@@ -176,20 +176,11 @@
 
 
 
-{
-\begin{frame}\frametitle{Spatial Econometrics}
-
-\begin{figure}
-	\includegraphics[height=0.7\textheight]{geodaspace.png}\end{figure}
-\end{frame}
-}
-
-
 
 
 
 {
-\begin{frame}\frametitle{GeoDaSpace}
+\begin{frame}\frametitle{GeoDaSpace: Spatial Econometrics}
 \begin{columns}
 	\begin{column}{0.65\textwidth}
 	\begin{itemize}
@@ -371,7 +362,6 @@ D. Else Lagrange Multiplier Test for Spatial Error Model > p-value AND Lagrange 
 		\end{itemize}
 		\item Implementation
 		\begin{itemize}
-
 			\item Utilize a processing queue
 			\item One manager, and n workers
 			\item Workers draw a regression model from the queue, process, and return the result
@@ -382,6 +372,23 @@ D. Else Lagrange Multiplier Test for Spatial Error Model > p-value AND Lagrange 
 
 \end{frame}
 }
+
+\begin{frame}\frametitle{Tensions}
+	\begin{block}{Trade-off}
+	\begin{itemize}
+		\item Trading elegant econometric theory for data mining
+		\item Gain speed and coverage of model space over the sequential
+		approach
+	\end{itemize}
+	\end{block}
+	\begin{block}{Issues}
+	\begin{itemize}
+		\item Distributional properties of big data approach unknown
+		\item Purists take a dim view of ``data mining''
+	\end{itemize}
+
+	\end{block}
+\end{frame}
 
 
 \subsection{Complex Systems Framework}
