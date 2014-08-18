@@ -1,0 +1,394 @@
+
+
+
+\documentclass[usepdftitle=false,professionalfonts,compress ]{beamer}
+
+%Packages to be included
+\usepackage[latin1]{inputenc}
+%\usepackage{beamerthemesplit}
+\usepackage{graphics,epsfig, subfigure}
+\usepackage{url}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{listings}
+\RequirePackage{eurosym}
+\usepackage{hyperref}
+\usepackage{verbatim}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% PDF meta data inserted here %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{
+	pdftitle={Parallel PySAL},
+	pdfauthor={Jason Laura, Robert Pahle, Sergio Rey, Luc Anselin}
+}
+
+
+
+
+
+%%%%%% Beamer Theme %%%%%%%%%%%%%
+
+\usetheme[]{Montpellier}
+\title{Parallel PySAL}
+\subtitle{Autoregression and Complex System Framework Integration}
+\author{Jason Laura, Robert Pahle, Sergio Rey, Luc Anselin}
+\institute{GeoDa Center for Geospatial Analysis and Computation\\Arizona State University}
+\date{\today}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Begin Document  %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\begin{document}
+\frame[plain]{
+	\frametitle{}
+	\titlepage
+	\vspace{-0.5cm}
+	\begin{center}
+	%\frontpagelogo
+	\end{center}
+}
+\frame{
+  \frametitle{Outline}
+	\tableofcontents[hideallsubsections]
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Content starts here %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\section{PySAL}
+		
+
+
+\subsection{PySAL}
+
+
+
+{
+\begin{frame}\frametitle{PySAL}
+\begin{columns}
+	\begin{column}{0.4\textwidth}
+	\begin{itemize}
+
+		\item Spatial analysis library
+		\item Big data world
+		\item v 1.8 July 2014
+	\end{itemize}
+	\end{column}
+	\begin{column}{0.78\textwidth}
+
+\begin{figure}
+	\includegraphics[height=0.7\textheight]{pysalGraphic.png}\end{figure}\end{column}
+\end{columns}
+
+\end{frame}
+}
+
+
+
+
+
+
+
+
+
+\subsection{Parallel PySAL}
+
+
+
+{
+\begin{frame}\frametitle{pPySAL}
+\begin{columns}
+	\begin{column}{0.3\textwidth}
+	\begin{itemize}
+
+		\item contiguity builder
+		\item max-p region
+		\item p-lisa
+		\item fisher jenks
+		\item spatial regimes
+	\end{itemize}
+	\end{column}
+	\begin{column}{0.8799999999999999\textwidth}
+
+\begin{figure}
+	\includegraphics[height=0.7\textheight]{pysalGraphic.png}\end{figure}\end{column}
+\end{columns}
+
+\end{frame}
+}
+
+
+
+
+
+
+
+
+
+
+
+{
+\begin{frame}\frametitle{Lessons Learned}
+	\begin{itemize}
+
+		\item Hardware dependence
+		\item No holy grail of automatic parallelization
+		\item Need a roadmap = Taxonomy
+		\begin{itemize}
+
+			\item Guidance on "best practice"
+			\item Identify dead ends
+		\end{itemize}
+	\end{itemize}
+
+\end{frame}
+}
+
+
+
+
+
+
+
+
+\section{Substantive Application: Spatial Econometrics}
+		
+
+
+\subsection{Specification Strategies}
+
+
+
+{
+\begin{frame}\frametitle{Spatial Econometrics}
+
+\begin{figure}
+	\includegraphics[height=0.7\textheight]{geodaspace.png}\end{figure}
+\end{frame}
+}
+
+
+
+
+
+{
+\begin{frame}\frametitle{GeoDaSpace}
+\begin{columns}
+	\begin{column}{0.65\textwidth}
+	\begin{itemize}
+
+		\item GUI ontop of spreg
+		\item Subset of spreg functionality
+		\item Cross-platform
+	\end{itemize}
+	\end{column}
+\begin{column}{0.53\textwidth}
+
+\begin{figure}
+	\includegraphics[height=0.7\textheight]{geodaspace.png}\end{figure}\end{column}
+\end{columns}
+
+\end{frame}
+}
+
+
+
+
+
+
+
+{
+\begin{frame}\frametitle{Specification Searches}
+	\begin{itemize}
+
+		\item Specific to General
+		\begin{itemize}
+
+			\item $y=X\beta + \epsilon$
+			\item OLS + Lagrange Multiplier Tests
+		\end{itemize}
+		\item General to Specific
+		\begin{itemize}
+
+			\item $y = \rho W y + X\beta + (I-\lambda W)^{-1} \nu$
+			\item ML + Restrictions
+		\end{itemize}
+	\end{itemize}
+
+\end{frame}
+}
+
+
+
+
+
+
+{
+\begin{frame}\frametitle{LM Based Specification}
+
+\begin{figure}
+	\includegraphics[height=0.9 \textheight]{decision3.pdf}\end{figure}
+\end{frame}
+}
+
+
+
+
+
+\subsection{ArcGIS Toolbox}
+
+
+
+{
+\begin{frame}\frametitle{ArcGIS Toolbox}
+
+\begin{figure}
+	\includegraphics[height=0.9\textheight]{ESRIPySALtoolbox_automodelspec.png}\end{figure}
+\end{frame}
+}
+
+
+
+
+
+{
+\begin{frame}\frametitle{ArcGIS Toolbox}
+
+\begin{figure}
+	\includegraphics[height=0.9\textheight]{ESRIPySALtoolbox_autosearch2.png}\end{figure}
+\end{frame}
+}
+
+
+
+
+
+
+\section{Implementation}
+		
+
+
+\subsection{CSF}
+
+
+
+{
+\begin{frame}\frametitle{Complex Systems Framework}
+
+\end{frame}
+}
+
+
+
+
+{
+\begin{frame}\frametitle{Components for Autoreg}
+
+\end{frame}
+}
+
+
+
+
+\subsection{Parallelization}
+
+
+
+{
+\begin{frame}\frametitle{}
+
+\end{frame}
+}
+
+
+
+
+
+
+
+
+{
+\begin{frame}\frametitle{Parallel Strategy}
+	\begin{itemize}
+
+		\item Speculative Parallelism
+		\begin{itemize}
+
+			\item Solve' all branches of a search tree
+			\item Leverage an excess computation model
+			\item No dependency in execution order
+			\item Synchronization at the completion of all computation
+		\end{itemize}
+		\item Implementation
+		\begin{itemize}
+
+			\item Utilize a processing queue
+			\item One manager, and n workers
+			\item Workers draw a regression model from the queue, process, and return the result
+			\item Scales to where n = number of models to compute
+			\item Potential to extend to variable parameter specification (larger tree)
+		\end{itemize}
+	\end{itemize}
+
+\end{frame}
+}
+
+
+
+
+
+{
+\begin{frame}\frametitle{Complex Systems Framework}
+
+\begin{figure}
+	\includegraphics[width=.97\textwidth]{setup1.png}\end{figure}
+\end{frame}
+}
+
+
+
+{
+\begin{frame}\frametitle{Autoreg in CSF}
+
+\begin{figure}
+	\includegraphics[width=.97\textwidth]{autoreg.png}\end{figure}
+\end{frame}
+}
+
+
+
+{
+\begin{frame}\frametitle{Model Path}
+
+\begin{figure}
+	\includegraphics[height=.97\textheight]{tree.png}\end{figure}
+\end{frame}
+}
+
+
+\section*{Conclusion}
+\begin{frame}\frametitle{Next Steps}
+
+Where do we go
+	
+\end{frame}
+
+
+\end{document}
